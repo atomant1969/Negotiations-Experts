@@ -33,6 +33,9 @@ body:
     attributes:
       label: Environment Details
       description: "Provide details about your operating system, browser, or device."
+      value: |
+        Windows 10 Pro English
+        Chrome Version 154.0.8037.95 (Official Build) (64-bit)
       placeholder: "E.g., macOS 14.2, Chrome 120.0, Production environment."
     validations:
       required: false
