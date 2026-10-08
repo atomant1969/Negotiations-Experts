@@ -55,10 +55,13 @@ body:
       label: Steps to Reproduce
       description: "Tell us exactly how to trigger the issue from a fresh state."
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+        Login with test_user88@negotiations.com/Test_Pass_ForUser
+        Select the Enterprise account from the top select menu
+        Select settings in the left Navigation menu
+        select facilitators from the settings page menu
+        Select the + Facilitator Button
+        Select the + Email Invitation button
+        Select the disabled Send Invitation button
     validations:
       required: true
 
