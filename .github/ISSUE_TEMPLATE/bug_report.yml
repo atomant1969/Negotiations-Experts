@@ -17,6 +17,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: version
+    attributes:
+      label: App Version / Build Number
+      description: What version of the application were you using? (e.g., v1.2.0, commit hash, or 'Latest Production')
+      placeholder: e.g., v1.4.2
+    validations:
+      required: true
+
   - type: textarea
     id: reproduction
     attributes:
@@ -30,14 +39,32 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: E.g., The user should be redirected to the success page and receive a confirmation email.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior / Error Logs
+      description: What actually happened? Paste any console errors, stack traces, or exact message outputs here.
+      placeholder: E.g., The button spins indefinitely and the developer console shows 'TypeError: Cannot read property id of undefined'.
+    validations:
+      required: true
+
   - type: dropdown
     id: severity
     attributes:
       label: Severity / Impact
       options:
-        - Critical (App crashes, data loss)
-        - Major (Core functionality broken, workaround exists)
-        - Minor (Visual bug, typo, minor annoyance)
+        - Critical (App crashes, data loss, complete blocker)
+        - Major (Core functionality broken, but workaround exists)
+        - Minor (Visual bug, typo, minor user experience annoyance)
     validations:
       required: true
 
