@@ -7,15 +7,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report this issue! Please provide as much detail as possible.
-  
-  - type: textarea
-    id: description
-    attributes:
-      label: Bug Description
-      description: "A clear and concise description of what the bug is."
-      placeholder: "E.g., The checkout page throws a 500 error when clicking 'Submit' with an empty cart."
-    validations:
-      required: true
 
   - type: input
     id: version
@@ -26,11 +17,40 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity / Impact
+      options:
+        - "Critical (App crashes, data loss, complete blocker)"
+        - "Major (Core functionality broken, but workaround exists)"
+        - "Minor (Visual bug, typo, minor user experience annoyance)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: "Provide details about your operating system, browser, or device."
+      placeholder: "E.g., macOS 14.2, Chrome 120.0, Production environment."
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: "A clear and concise description of what the bug is."
+      placeholder: "E.g., The checkout page throws a 500 error when clicking 'Submit' with an empty cart."
+    validations:
+      required: true
+
   - type: textarea
     id: reproduction
     attributes:
       label: Steps to Reproduce
-      description: "Tell us exactly how to trigger the issue."
+      description: "Tell us exactly how to trigger the issue from a fresh state."
       value: |
         1. Go to '...'
         2. Click on '....'
@@ -56,26 +76,6 @@ body:
       placeholder: "E.g., The button spins indefinitely and the developer console shows 'TypeError: Cannot read property id of undefined'."
     validations:
       required: true
-
-  - type: dropdown
-    id: severity
-    attributes:
-      label: Severity / Impact
-      options:
-        - "Critical (App crashes, data loss, complete blocker)"
-        - "Major (Core functionality broken, but workaround exists)"
-        - "Minor (Visual bug, typo, minor user experience annoyance)"
-    validations:
-      required: true
-
-  - type: textarea
-    id: environment
-    attributes:
-      label: Environment Details
-      description: "Provide details about your operating system, browser, or device."
-      placeholder: "E.g., macOS 14.2, Chrome 120.0, Production environment."
-    validations:
-      required: false
 
   - type: checkboxes
     id: checkboxes
