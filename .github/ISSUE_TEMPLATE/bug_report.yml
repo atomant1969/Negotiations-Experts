@@ -1,5 +1,5 @@
 name: 🐛 Professional Bug Report
-description: File a structured report to help us reproduce and fix the bug.
+description: What version of the application were you using? (e.g., v1.2.0, commit hash, or 'Latest Production')
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
